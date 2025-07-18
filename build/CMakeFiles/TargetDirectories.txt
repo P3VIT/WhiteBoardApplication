@@ -1,0 +1,3 @@
+/Users/pavit/C++ Projects/ChalkBoardApp/build/CMakeFiles/whiteboard.dir
+/Users/pavit/C++ Projects/ChalkBoardApp/build/CMakeFiles/edit_cache.dir
+/Users/pavit/C++ Projects/ChalkBoardApp/build/CMakeFiles/rebuild_cache.dir
