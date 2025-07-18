@@ -5,6 +5,7 @@
 using namespace std;
 
 Menu::Menu() {
+    // changes
     toolBarMenu = sf::RectangleShape({800.f,60.f});
     toolBarMenu.setFillColor(sf::Color{248,248,248,255});
     toolBarMenu.setPosition(0, 0);
