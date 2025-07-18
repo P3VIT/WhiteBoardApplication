@@ -1,11 +1,10 @@
-# WhiteBoard Application
+# ChalkBoardApp
 
 A lightweight collaborative whiteboard application built in C++ using SFML.
 
 ## 🔍 Overview
 
 ChalkBoardApp lets you draw freehand on a persistent canvas with smooth, continuous strokes powered by Bresenham’s line algorithm. A top toolbar scaffold provides space for drawing tools and UI elements.
-
 
 ## 🚀 Features
 
@@ -14,14 +13,33 @@ ChalkBoardApp lets you draw freehand on a persistent canvas with smooth, continu
 - **Toolbar Scaffold:** Placeholder buttons for pencil, shape selector, and menu — ready for eraser, color pickers, etc.
 - **Modular Architecture:** Separate classes for Canvas, Menu, Brush, and future NetworkManager.
 
-
 ## ⚙️ Installation & Build
 
 ### Prerequisites
 
 - **C++17** compatible compiler (Clang, GCC)
-- **SFML 2.5** (graphics, window, system)
 - **CMake ≥ 3.10**
+
+### Installing SFML
+
+**macOS (Homebrew):**
+
+```bash
+brew install sfml@2
+```
+
+**Ubuntu/Debian:**
+
+```bash
+sudo apt-get update
+sudo apt-get install libsfml-dev
+```
+
+**Windows (vcpkg):**
+
+```bash
+vcpkg install sfml[graphics,window,system]
+```
 
 ### Build Steps
 
@@ -38,7 +56,6 @@ cmake ..
 cmake --build .
 ```
 
-
 ## ▶️ Usage
 
 From the `build/` directory, run:
@@ -50,7 +67,6 @@ From the `build/` directory, run:
 - **Click** once to draw a single dot.
 - **Click and drag** to draw smooth lines.
 - The toolbar at the top is a placeholder — future tools will include an eraser and color pickers.
-
 
 ## 📂 Project Structure
 
@@ -64,7 +80,6 @@ ChalkBoardApp/
 └── README.md          # Project overview and instructions
 ```
 
-
 ## 🤝 Contributing
 
 We welcome contributions! Some next steps:
@@ -73,7 +88,6 @@ We welcome contributions! Some next steps:
 - Refactor `Canvas` to own its texture/image internally
 - Add **real-time collaboration** via NetworkManager (SFML sockets or ASIO)
 - Improve UI/UX: Undo/Redo, save/load, brush presets
-
 
 ## 📝 License
 
